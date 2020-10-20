@@ -54,9 +54,6 @@ export default {
       selectedCategories,
     }
   },
-  data: () => ({
-    searchValue: '',
-  }),
   computed: {
     ...mapGetters({
       books: 'books/booksList',
@@ -96,7 +93,6 @@ export default {
         query: {
           categories: query.categories.join('_'),
           page: query.page,
-          s: query.s,
         },
       })
     },
